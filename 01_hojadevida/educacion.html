@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content=“Hugo Martinez Lagos”>
+    <meta name="description" content=“Hoja de Vida de tu Hugo Martinez“>
+     <!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<!-- Tema opcional -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+<!-- JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <title>Hoja de Vida - Educación</title>
+  </head>
+  <body>
+ <svg width="240" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Logo</title>
+  <text stroke="#000000" transform="matrix(2.9377269485462416,0,0,2.6584979356226763,-202.26867392324664,-430.185345305406) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18" id="svg_1" y="180" x="100" stroke-width="0" fill="#ff7f00">HAML</text>
+  <line id="svg_2" y2="60" x2="226.000009" y1="60" x1="14" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="#ff7f00" stroke="#ff7f00"/>
+ </g>
+</svg>
+<div class="container">
+<div class="page-header">
+   <h1>Hoja de Vida</h1>
+    <h2>Hugo A. Martínez Lagos</h2>
+      <h3>Ingeniero en Informática</h3>
+      <h3> Nació en Pucón el 14/04/1978</h3>
+      <p>
+	          <a href="index.html">Inicio</a> | <a href="educacion.html">Educación</a> | <a href="experiencia.html">Experiencia</a>
+	      </p>
+ </div>
+     
+     <h2>Educación</h2>
+     
+     <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                            <table id="detalles" class="table table-striped table-bordered table-condensed table-hover">
+                              <thead style="background-color:#A9D0F5">
+                                    <th>Año</th>
+									<th>Institución</th>
+									<th>Lugar</th>
+									<th>¿Culminó?</th>
+                                </thead>
+                               	<tbody>
+									<tr>
+										<td>1994-1997</td>
+										<td>Liceo Pablo Sexto, Enseñanza Media</td>
+										<td>Pucón - Chile</td>
+										<td>Sí</td>
+
+									</tr>
+									<tr>
+										<td>1998- 2001</td>
+										<td>Universidad Austral de Chile, Ing. Civil Informática</td>
+										<td>Valdivia - Chile</td>
+										<td>No</td>
+										
+									</tr>
+									<tr>
+										<td>2013-2017</td>
+										<td>UNIAC, Ing. Informática</td>
+										<td>Santiago - Chile</td>
+										<td>Sí</td>
+										
+									</tr>
+								</tbody>
+
+
+
+                            </table>
+                          </div>
+		 <h2>Agregar Estudios</h2>
+		 <div class="panel-body" style="height: 400px;" id="formularioregistros">
+                        <form  name="formulario" id="formulario" method="POST">
+                          <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label for="anio">Año:</label>
+                            
+                            <select id="anio" name="anio" class="form-control selectpicker" data-live-search="true" required >
+								<option value="18">2018</option>
+								<option value="17">2017</option>
+								<option value="16">2016</option>
+								<option value="15">2015</option>
+								<option value="14">2014</option>
+								<option value="13">2013</option>
+							</select>
+                          </div>
+
+                          <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label for="institucion">Institución</label>
+                            <input class="form-control" type="text" name="institucion" placeholder="Nombre de la Institución" required >
+                          </div>
+                          <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label for="lugar" >Lugar </label>
+			 				<input class="form-control" type="text" name="lugar" placeholder="Lugar de estudios" required>
+                          </div>
+                          <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label for="termino">¿Terminó? </label>
+                           	<input  type="radio" name="fin" value="1"> SI
+  							<input  type="radio" name="fin" value="0"> NO
+  							
+ 							
+                          </div>
+                         
+                          <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a data-toggle="modal" href="#myModal">           
+                              <button id="btnAgregarArt"  class="btn btn-primary" type="submit" value="Registrar"> <span class="fa fa-plus"></span> Agregar Estudio</button>
+                            </a>
+                          </div>
+                                                 
+                        </form>
+                    </div>
+   </div>
+   </body>
+   <footer>
+        <div class="modal-footer">
+        <p>
+          <a href="mailto:info@sawp.cl">info@sawp.cl</a> | <a href="https://web.facebook.com/sawpcl/" target="_blank">Facebook</a> |Pucón - Chile</a>
+        </p>
+        </div>
+    </footer>
+
+</html>
