@@ -1,0 +1,192 @@
+@font-face {
+	font-family:Dancing Script;
+	src: url(../fuentes/DancingScript.otf);
+}
+
+/*article[class^='principal']{*/
+  /*border: 4px solid black;*/
+/*  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  background: #82c3a6;
+  align-content: center;
+}*/
+#imgprincipal{
+  border: 0px;
+/*  border-radius: 5px;*/
+  display:block;
+  margin:auto;
+  width: 90%;
+
+}
+
+.page-header1{
+  border: 4px  black;
+  background: #5b7989;
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+
+}
+h1#titulo{
+  font-family: 'Dancing Script';
+text-align: left;
+color: white;
+/*text-shadow: 2px #02010a;*/
+text-shadow: 2px 2px #02010a;
+
+}
+.enlace{
+color: white;
+  font-family: 'Dancing Script';
+
+}
+.enlace1{
+font-family: 'Dancing Script';
+
+
+}
+
+
+@media (min-width: 900px) {
+
+	/*body {
+		font-size: 16px;
+		color: red;
+	}*/
+	#headerx{
+	  padding: 10px;
+	  /*width:300px;*/
+	 float:right;
+	}
+}
+@media (max-width: 300px) {
+	#headerx{
+	  padding: 10px;
+	  float:left;
+	}
+}
+
+.principal{
+  /*border: 4px solid black;*/
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  background: #82c3a6;
+  align-content: center;
+}
+.sub-principal{
+  border: 1px;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  background: #d5c75f;
+
+  }
+.img-sub{
+      border-radius: 5px;
+      width: 80%;
+      display:block;
+      margin: auto;
+    }
+  div{
+    padding: 8px;
+  }
+
+
+    img{
+      border: 2px solid;
+      background:#82c3a6;
+      border-color: #CCCCCC #666666 #666666 #CCCCCC
+    }
+    #imagen1:hover{
+    	transform: rotate(10deg);
+      border: 2px solid;
+      background:#82c3a6;
+      border-color: #CCCCCC #666666 #666666 #CCCCCC /*Creamos un marco para acentuar el efecto */
+    }
+
+    #imagen2:hover{
+    	transform: translate(20px,-5px);
+      border: 2px solid;
+      background:#82c3a6;
+      border-color: #CCCCCC #666666 #666666 #CCCCCC /*Creamos un marco para acentuar el efecto */
+    }
+    .page-pie{
+      border: 4px  black;
+      background: #5b7989;
+      display: inline-block;
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+      padding: 20px;
+
+    }
+    p {
+      color:white;
+      font-family: 'Dancing Script';
+
+    }
+    body{
+      background: black;
+          font-family: 'Dancing Script';
+    }
+    /*#piasaje1:hover{
+    transform: scale(2);
+    }*/
+
+    img[id*="piasaje"]:hover
+    {
+      transform: scale(2);
+    }
+
+		#piasaje1 {
+			-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+			filter: blur(10px);
+
+		}
+		#piasaje3 {
+			-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+			filter: sepia(90%);
+		}
+
+		#piasaje2, #piasaje4, #piasaje6 {
+     -webkit-filter:grayscale(100%);
+			filter: grayscale(100%);
+
+
+		}
+
+		.page-header1 {
+		 animation-duration: 2s;
+		  animation-name: slidein;
+		}
+
+	/*	@keyframes slidein {  /*otra forma de hacerlo
+		  from {
+		    margin-top: 150%;
+
+		  }
+
+		  to {
+		    margin-top: -5%;
+
+		  }
+		}*/
+
+		@keyframes slidein{
+					0%{
+					margin-top: 150%;
+					}
+					60%{
+					margin-top: -5%;
+					}
+					100%{
+					margin-top: 0%;
+					}
+}
+
+
+
+
+/*margin-top de 150% a -5% y luego a 0%, en los momentos 0%, 60% y 100% respectivamente*/
